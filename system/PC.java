@@ -34,6 +34,15 @@ public class PC {
     public void setRAM(RAM ram) {
         this.ram = ram;
     }
+
+    public void generateReport() {
+        System.out.println("--- PC Build Report ---");
+        System.out.println("CPU: " + this.getCPU().getName());
+        System.out.println("Motherboard: " + this.getMotherboard().getName());
+        System.out.println("RAM Sticks: " + this.ramSticks.size());
+        System.out.println("-----------------------");
+    }
+
     
     // Methods untuk add storage dan peripheral
     public void addStorageDevice(StorageDevice storage) {
